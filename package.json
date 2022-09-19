@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test":"jest",
+    "test": "jest",
     "testc": "jest --coverage"
   },
   "repository": {
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/geor0014/CI-CD-Y2#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "eslint": "^8.23.1",
+    "express": "^4.18.1",
+    "prettier": "^2.7.1"
   },
   "devDependencies": {
     "jest": "^29.0.3"

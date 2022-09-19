@@ -4,7 +4,18 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo Hello, world!
+
       - uses: actions/checkout@v3
-      - run: npm ci
-      - run: npm test
+      
+      - name: Install node dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+
+      - name: Lint Action
+        uses: wearerequired/lint-action@v2.1.0
+        with:
+          eslint: true
+          prettier: true
